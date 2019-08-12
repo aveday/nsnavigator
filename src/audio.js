@@ -15,6 +15,16 @@ const scope = new Oscilloscope(source)
 source.connect(audioContext.destination)
 
 
+window.onresize = () => {
+  const canvas = document.querySelector('canvas')
+  canvas.width = document.body.clientWidth / 3;
+  canvas.height = document.body.clientHeight / 3;
+  const ctx = canvas.getContext("2d")
+  ctx.strokeStyle = 'red'
+  ctx.lineWidth = '2'
+  scope.draw(ctx)
+}
+
 const playClip = clip => {
   console.log('playing...')
   audioElement.src = clip
