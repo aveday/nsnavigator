@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/nsnavigator/static/css/main.c55e54c5.chunk.css",
+    "main.js": "/nsnavigator/static/js/main.de5c60a2.chunk.js",
+    "main.js.map": "/nsnavigator/static/js/main.de5c60a2.chunk.js.map",
+    "runtime~main.js": "/nsnavigator/static/js/runtime~main.94064e2a.js",
+    "runtime~main.js.map": "/nsnavigator/static/js/runtime~main.94064e2a.js.map",
+    "static/js/2.fd41f47a.chunk.js": "/nsnavigator/static/js/2.fd41f47a.chunk.js",
+    "static/js/2.fd41f47a.chunk.js.map": "/nsnavigator/static/js/2.fd41f47a.chunk.js.map",
+    "index.html": "/nsnavigator/index.html",
+    "precache-manifest.f813be5823b06a711881bb1a84a59fd5.js": "/nsnavigator/precache-manifest.f813be5823b06a711881bb1a84a59fd5.js",
+    "service-worker.js": "/nsnavigator/service-worker.js",
+    "static/css/main.c55e54c5.chunk.css.map": "/nsnavigator/static/css/main.c55e54c5.chunk.css.map",
+    "static/media/mike.mp3": "/nsnavigator/static/media/mike.28a8745c.mp3",
+    "static/media/president.mp3": "/nsnavigator/static/media/president.e6c3b639.mp3",
+    "static/media/shutup.mp3": "/nsnavigator/static/media/shutup.ea5ea565.mp3",
+    "static/media/welcome.mp3": "/nsnavigator/static/media/welcome.70ceb45e.mp3"
+  }
+}
