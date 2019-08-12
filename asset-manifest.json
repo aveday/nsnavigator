@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nsnavigator/static/css/main.51cfd51c.chunk.css",
+    "main.css": "/nsnavigator/static/css/main.ac74319f.chunk.css",
     "main.js": "/nsnavigator/static/js/main.e4c176d8.chunk.js",
     "main.js.map": "/nsnavigator/static/js/main.e4c176d8.chunk.js.map",
     "runtime~main.js": "/nsnavigator/static/js/runtime~main.94064e2a.js",
@@ -8,9 +8,9 @@
     "static/js/2.04d47ca1.chunk.js": "/nsnavigator/static/js/2.04d47ca1.chunk.js",
     "static/js/2.04d47ca1.chunk.js.map": "/nsnavigator/static/js/2.04d47ca1.chunk.js.map",
     "index.html": "/nsnavigator/index.html",
-    "precache-manifest.a34071f2d877670010d9d8dfadebb463.js": "/nsnavigator/precache-manifest.a34071f2d877670010d9d8dfadebb463.js",
+    "precache-manifest.734aa4260249dd5c1fba1779aefe6664.js": "/nsnavigator/precache-manifest.734aa4260249dd5c1fba1779aefe6664.js",
     "service-worker.js": "/nsnavigator/service-worker.js",
-    "static/css/main.51cfd51c.chunk.css.map": "/nsnavigator/static/css/main.51cfd51c.chunk.css.map",
+    "static/css/main.ac74319f.chunk.css.map": "/nsnavigator/static/css/main.ac74319f.chunk.css.map",
     "static/media/mike.mp3": "/nsnavigator/static/media/mike.28a8745c.mp3",
     "static/media/president.mp3": "/nsnavigator/static/media/president.e6c3b639.mp3",
     "static/media/shutup.mp3": "/nsnavigator/static/media/shutup.ea5ea565.mp3",
