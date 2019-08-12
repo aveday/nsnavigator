@@ -5,6 +5,9 @@ import clip2 from './welcome.mp3'
 import clip3 from './mike.mp3'
 import clip4 from './president.mp3'
 
+const clips = [ clip1, clip2, clip3, clip4 ]
+let clipIndex = 0
+
 const audioElement = new Audio()
 const audioContext = new window.AudioContext()
 const source = audioContext.createMediaElementSource(audioElement)
@@ -32,6 +35,11 @@ class AudioComponent extends React.Component {
     ctx.lineWidth = '2'
     scope.draw(ctx)
     console.log('mount')
+
+    document.onkeypress = target => {
+      playClip(clips[clipIndex])
+      clipIndex = (clipIndex + 1) % 4
+    }
   }
 
   render() {
