@@ -1,9 +1,5 @@
 import React from 'react'
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap
-} from 'react-google-maps'
+import GoogleMap from 'google-map-react'
 
 const mapStyle = [
     {
@@ -172,32 +168,42 @@ const mapStyle = [
             { "color": "#000000" },
             { "lightness": 5 }
         ]
-    }
+    },
+  {}
 ]
 
+class Map extends React.Component {
+  static defaultProps = {
+    center: {
+      lat: -34.92386, // latitude for the center of the map
+      lng: 138.59893 // longitude for the center of the map
+    },
+    zoom: 18,
+    options: {
+      styles: mapStyle,
+      disableDefaultUI: true, // disable default map UI
+      draggable: true, // make map draggable
+      keyboardShortcuts: false, // disable keyboard shortcuts
+      scaleControl: true, // allow scale controle
+      scrollwheel: true, // allow scroll wheel
+      backgroundColor: "#660000"
+    }
+  }
 
-const mapProps = {
-  defaultZoom: 18,
-  defaultCenter: {
-    lat: -34.92386, // latitude for the center of the map
-    lng: 138.59893 // longitude for the center of the map
-  },
-  defaultOptions: {
-    disableDefaultUI: true, // disable default map UI
-    draggable: true, // make map draggable
-    keyboardShortcuts: false, // disable keyboard shortcuts
-    scaleControl: true, // allow scale controle
-    scrollwheel: true, // allow scroll wheel
-    styles: mapStyle, // change default map styles
-    backgroundColor: "#ff0000"
+  render() {
+    return (
+      // Important! Always set the container height explicitly
+      <div style={{ height: '90vh', width: '100%' }}>
+        <GoogleMap
+          bootstrapURLKeys={{ key: document.URL.split('=')[1] }}
+          defaultCenter={this.props.center}
+          defaultZoom={this.props.zoom}
+          options={this.props.options}
+        >
+        </GoogleMap>
+      </div>
+    )
   }
 }
 
-const MapComponent = withScriptjs(
-  withGoogleMap(props => (
-    <GoogleMap {...mapProps}/>
-  ))
-)
-
-export default MapComponent 
-
+export default Map
