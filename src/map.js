@@ -172,35 +172,75 @@ const mapStyle = [
   {}
 ]
 
+const ihtfw = [
+  'AIzaSyA', 'YjBh6fnStI4',
+  'Uac5nRD-VIFh', 'Gy_8Kcl44'
+]
+
+const Car = () => (
+  <p id='car'>
+    ⤊
+  </p>
+)
+
+
+let moveInterval
+let movespeed = 0.0003
+let moveProgress = 0
+
+const places = [
+  {lat: -34.925824, lng: 138.569881},
+  {lat: -34.923924, lng: 138.569781},
+]
+
 class Map extends React.Component {
+
   static defaultProps = {
     center: {
-      lat: -34.92386, // latitude for the center of the map
-      lng: 138.59893 // longitude for the center of the map
+      lat: -34.924624, // latitude for the center of the map
+      lng: 138.569881 // longitude for the center of the map
     },
-    zoom: 18,
+    zoom: 19,
     options: {
       styles: mapStyle,
       disableDefaultUI: true, // disable default map UI
       draggable: true, // make map draggable
       keyboardShortcuts: false, // disable keyboard shortcuts
-      scaleControl: true, // allow scale controle
-      scrollwheel: true, // allow scroll wheel
+      scaleControl: false, // allow scale controle
+      scrollwheel: false, // allow scroll wheel
       backgroundColor: "#660000"
     }
   }
 
+  handleApiLoaded({map, maps}) {
+
+    window.clearInterval(moveInterval)
+    moveInterval = window.setInterval( () => {
+      let lat = places[0].lat + (places[1].lat - places[0].lat) * moveProgress
+      let lng = places[0].lng + (places[1].lng - places[0].lng) * moveProgress
+      moveProgress += movespeed
+      if (moveProgress > 1)
+        moveProgress = 0
+
+      map.setCenter({ lat, lng })
+    }, 1)
+  }
+
   render() {
+    console.log('rendermap')
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: '90vh', width: '100%' }}>
         <GoogleMap
-          bootstrapURLKeys={{ key: document.URL.split('=')[1] }}
+          bootstrapURLKeys={{ key: ihtfw.join('') }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           options={this.props.options}
+          yesIWantToUseGoogleMapApiInternals={true}
+          onGoogleApiLoaded={this.handleApiLoaded.bind(this)}
         >
         </GoogleMap>
+        <Car />
       </div>
     )
   }
