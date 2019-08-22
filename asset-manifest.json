@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/nsnavigator/static/css/main.ac74319f.chunk.css",
-    "main.js": "/nsnavigator/static/js/main.a18cd0b4.chunk.js",
-    "main.js.map": "/nsnavigator/static/js/main.a18cd0b4.chunk.js.map",
-    "runtime~main.js": "/nsnavigator/static/js/runtime~main.94064e2a.js",
-    "runtime~main.js.map": "/nsnavigator/static/js/runtime~main.94064e2a.js.map",
-    "static/js/2.b5d41022.chunk.js": "/nsnavigator/static/js/2.b5d41022.chunk.js",
-    "static/js/2.b5d41022.chunk.js.map": "/nsnavigator/static/js/2.b5d41022.chunk.js.map",
-    "index.html": "/nsnavigator/index.html",
-    "precache-manifest.5ffb6f7cf46f8645ded3d619e733c3f6.js": "/nsnavigator/precache-manifest.5ffb6f7cf46f8645ded3d619e733c3f6.js",
-    "service-worker.js": "/nsnavigator/service-worker.js",
-    "static/css/main.ac74319f.chunk.css.map": "/nsnavigator/static/css/main.ac74319f.chunk.css.map",
-    "static/media/mike.mp3": "/nsnavigator/static/media/mike.28a8745c.mp3",
-    "static/media/president.mp3": "/nsnavigator/static/media/president.e6c3b639.mp3",
-    "static/media/shutup.mp3": "/nsnavigator/static/media/shutup.ea5ea565.mp3",
-    "static/media/welcome.mp3": "/nsnavigator/static/media/welcome.70ceb45e.mp3"
+    "main.css": "/nsnavigator/index/static/css/main.a625c65c.chunk.css",
+    "main.js": "/nsnavigator/index/static/js/main.e55182e9.chunk.js",
+    "main.js.map": "/nsnavigator/index/static/js/main.e55182e9.chunk.js.map",
+    "runtime~main.js": "/nsnavigator/index/static/js/runtime~main.fa983dd2.js",
+    "runtime~main.js.map": "/nsnavigator/index/static/js/runtime~main.fa983dd2.js.map",
+    "static/js/2.4d17c262.chunk.js": "/nsnavigator/index/static/js/2.4d17c262.chunk.js",
+    "static/js/2.4d17c262.chunk.js.map": "/nsnavigator/index/static/js/2.4d17c262.chunk.js.map",
+    "index.html": "/nsnavigator/index/index.html",
+    "precache-manifest.e48f44616a7c5328f13b2e62323677b5.js": "/nsnavigator/index/precache-manifest.e48f44616a7c5328f13b2e62323677b5.js",
+    "service-worker.js": "/nsnavigator/index/service-worker.js",
+    "static/css/main.a625c65c.chunk.css.map": "/nsnavigator/index/static/css/main.a625c65c.chunk.css.map",
+    "static/media/traffic.mp3": "/nsnavigator/index/static/media/traffic.54e4e75c.mp3",
+    "static/media/welcomeback.mp3": "/nsnavigator/index/static/media/welcomeback.96918494.mp3"
   }
 }
