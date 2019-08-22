@@ -72,6 +72,8 @@ class AudioComponent extends React.Component {
           </div>
 
         </div>
+        <div id='graphic'>
+        </div>
       </section>
     )
   }
