@@ -189,8 +189,8 @@ let movespeed = 0.0003
 let moveProgress = 0
 
 const places = [
-  {lat: -34.925824, lng: 138.569881},
-  {lat: -34.923924, lng: 138.569781},
+  {lat: -34.927824, lng: 138.569881},
+  {lat: -34.925924, lng: 138.569781},
 ]
 
 class Map extends React.Component {
