@@ -34,6 +34,10 @@ const playClip = clip => {
   scope.animate(ctx)
 }
 
+const queueClip = (clip, timeout) => {
+  return () => window.setTimeout(() => playClip(clip), timeout)
+}
+
 class AudioComponent extends React.Component {
   componentDidMount() {
     const canvas = document.querySelector('canvas')
@@ -60,18 +64,21 @@ class AudioComponent extends React.Component {
 
         <div className='buttons'>
           <div className='row'>
-            <div className='button' onClick={()=>playClip(clip1)}>NAV</div>
-            <div className='button' onClick={()=>playClip(clip2)}>INT</div>
-            <div className='button'>REG</div>
+            <div className='button' onClick={queueClip(clip1, 1000)}>C1D1</div>
+            <div className='button' onClick={queueClip(clip1, 3000)}>C1D3</div>
+            <div className='button' onClick={queueClip(clip1, 5000)}>C1D5</div>
           </div>
 
           <div className='row'>
-            <div className='button'>LOG</div>
-            <div className='button'>RND</div>
-            <div className='button'>POW</div>
+            <div className='button' onClick={queueClip(clip2, 1000)}>C2D1</div>
+            <div className='button' onClick={queueClip(clip2, 3000)}>C2D3</div>
+            <div className='button' onClick={queueClip(clip2, 5000)}>C2D5</div>
           </div>
 
         </div>
+        <br/>
+        <p className='version'>navigator v1.86.32</p>
+        <br/>
         <div id='graphic'>
         </div>
       </section>
