@@ -50,6 +50,7 @@ canvas {
   font-family: mono;
   color: #700;
   font-size: 0.7em;
+  border-radius: 0 0 0 1em;
 }
 
 

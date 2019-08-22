@@ -1,11 +1,9 @@
 import React from 'react'
 import Oscilloscope from 'oscilloscope'
-import clip1 from './shutup.mp3'
-import clip2 from './welcome.mp3'
-import clip3 from './mike.mp3'
-import clip4 from './president.mp3'
+import clip1 from './welcomeback.mp3'
+import clip2 from './traffic.mp3'
 
-const clips = [ clip1, clip2, clip3, clip4 ]
+const clips = [ clip1, clip2 ]
 let clipIndex = 0
 
 const audioElement = new Audio()
@@ -50,7 +48,7 @@ class AudioComponent extends React.Component {
 
     document.onkeypress = target => {
       playClip(clips[clipIndex])
-      clipIndex = (clipIndex + 1) % 4
+      clipIndex = (clipIndex + 1) % 2
     }
   }
 
@@ -64,13 +62,13 @@ class AudioComponent extends React.Component {
           <div className='row'>
             <div className='button' onClick={()=>playClip(clip1)}>NAV</div>
             <div className='button' onClick={()=>playClip(clip2)}>INT</div>
-            <div className='button' onClick={()=>playClip(clip1)}>REG</div>
+            <div className='button'>REG</div>
           </div>
 
           <div className='row'>
-            <div className='button' onClick={()=>playClip(clip3)}>LOG</div>
-            <div className='button' onClick={()=>playClip(clip4)}>RND</div>
-            <div className='button' onClick={()=>playClip(clip1)}>POW</div>
+            <div className='button'>LOG</div>
+            <div className='button'>RND</div>
+            <div className='button'>POW</div>
           </div>
 
         </div>
